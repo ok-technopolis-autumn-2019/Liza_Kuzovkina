@@ -1,0 +1,30 @@
+body {
+    background-color: #DCDCDC;
+}
+.todo-app__header {
+    text-align: center;
+    font-family: Courier New, monospace;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+.todo-app__frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.todo-app__tasks{
+
+}
+.todo-app__action-bar{
+
+}
+input {
+    font-size: 16px;
+    padding: 10px;
+    width: 300px;
+    display: block;
+}
