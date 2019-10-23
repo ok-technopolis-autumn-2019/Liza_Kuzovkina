@@ -1,14 +1,18 @@
 body {
-    background-color: #DCDCDC;
+    background-color: #F2F2F2;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: #666666;
+    margin: 0;
+    padding: 0;
 }
+
 .todo-app__header {
     text-align: center;
-    font-family: Courier New, monospace;
     font-style: normal;
     font-weight: 200;
-    font-size: 30px;
-    line-height: 20px;
-    color: #C0C0C0;
+    font-size: 50px;
+    line-height: 1;
+    color: #CCCCCC;
 }
 .todo-app__frame{
     display: flex;
@@ -16,15 +20,78 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.main-controls{
+    display: flex;
+    height: 70px;
+}
+
+.main-controls__select-all-buttons{
+    text-indent: -9999px;
+    background-image: url("icons/arrow_down_icon.png");
+    background-repeat: no-repeat;
+    height: 36px;
+}
+
+.main-controls__create-new{
+    flex-grow: 1;
+}
+
+.main-controls__create-new-input{
+    width: 100%;
+    font-size: 24px;
+}
+
+ul{
+    list-style: none;
+}
+
+input[type="text"]::placeholder{
+    color: #CCCCCC;
+    font-style: italic;
+    background-color: transparent;
+}
+
+input[type="text"]{
+    color: #000000;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.action-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #888888;
+    height: 50px;
+}
+
+.task-filter{
+    display: flex;
+}
+
+.task-item__delete{
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px;
+    background-image: url("icons/delete_icon.png");
+    background-repeat: no-repeat;
+}
+
+.task-item__input{
+    height: 60px;
+    width: 100%;
+    font-size: 24px;
+}
+
 .todo-app__tasks{
 
 }
 .todo-app__action-bar{
 
-}
-input {
-    font-size: 16px;
-    padding: 10px;
-    width: 300px;
-    display: block;
 }
