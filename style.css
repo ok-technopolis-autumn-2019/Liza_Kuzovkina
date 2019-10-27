@@ -9,6 +9,7 @@ body {
 ul {
     list-style: none;
     margin: 0 0 50px 0;
+    padding: 0;
 }
 
 input[type="text"]::placeholder {
@@ -57,11 +58,11 @@ button{
 }
 
 .main-controls__select-all-buttons{
-    margin: 10px 0  0 10px;
+    margin: 20px 0  0 16px;
     text-indent: -9999px;
-    background-image: url("icons/arrow_down_icon.png");
+    background-image: url("icons/arrow_down.png");
     background-repeat: no-repeat;
-    height: 36px;
+    height: 20px;
     padding: 0;
 }
 
@@ -98,12 +99,13 @@ button{
 
 .task-item__delete{
     flex-shrink: 0;
-    height: 36px;
+    height: 20px;
     text-indent: -9999px;
-    background-image: url("icons/delete_icon.png");
+    background-image: url("icons/delete.png");
     background-repeat: no-repeat;
     opacity: 0;
-    margin-top: 6px;
+    margin: 20px 20px 0 0;
+    width: 20px;
 }
 
 .task-item{
@@ -140,7 +142,7 @@ button{
 .task-item__text{
     display: flex;
     flex-grow: 1;
-    padding: 10px 0;
+    padding: 15px 0;
     word-break: break-word;
     font-size: 24px;
 }
@@ -223,4 +225,26 @@ button{
     z-index: -2;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.task-item__status-label {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 10px 10px 10px 10px;
+    background-image: url("icons/unchecked.png");
+    background-repeat: no-repeat;
+    color: transparent;
+    border-radius: 45%;
+}
+
+.task-item__status:checked + .task-item__status-label {
+    background-image: url("icons/checked.png");
+    background-repeat: no-repeat;
+}
+
+.task-item__status{
+    position: absolute;
+    opacity: 0;
 }
