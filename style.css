@@ -58,17 +58,16 @@ button{
 }
 
 .main-controls__select-all-buttons{
-    margin: 20px 0  0 16px;
     text-indent: -9999px;
     background-image: url("icons/arrow_down.svg");
     background-repeat: no-repeat;
-    height: 63%;
-    padding: 0;
+    background-position: 12px 20px;
+    height: 55px;
+    width: 55px;
 }
 
 .main-controls__create-new{
     flex-grow: 1;
-
 }
 
 .main-controls__create-new-input{
@@ -106,6 +105,10 @@ button{
     opacity: 0;
     margin: 20px 20px 0 0;
     width: 20px;
+}
+
+.task-item__delete:focus{
+  opacity: 1;
 }
 
 .task-item{
@@ -180,12 +183,13 @@ button{
 
 .task-filter__text{
     padding: 2px 10px 2px 10px;
+    border: 1px transparent solid;
+    border-radius: 10%;
+    background-color: #FFFFFF
 }
 
 .task-filter__input:checked ~ .task-filter__text{
     border: 1px #E6E6E6 solid;
-    border-radius: 10%;
-    background-color: #FFFFFF;
 }
 
 .task-filter__input{
@@ -193,6 +197,7 @@ button{
     height: 0;
     margin-left: -35px;
     opacity: 0;
+    position: absolute; left: -9999px;
 }
 
 .task-clear-completed{
@@ -237,9 +242,9 @@ button{
     height: 36px;
     box-sizing: border-box;
     margin: 10px 10px 10px 10px;
-    background-image: url("icons/circle.svg");
+    background-position: 5px 5px;
+    border: 2px #CCCCCC solid;
     background-repeat: no-repeat;
-    color: transparent;
     border-radius: 45%;
 }
 
@@ -248,6 +253,10 @@ button{
     background-position: 5px 5px;
     border: 2px #5DC2AF solid;
     background-repeat: no-repeat;
+}
+
+.task-item__status:focus ~ .task-item__status-label{
+  border: 2px #888888 solid;
 }
 
 .task-item__status{
